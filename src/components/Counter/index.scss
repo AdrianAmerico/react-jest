@@ -1,0 +1,65 @@
+@import "../../styles/globalColors.scss";
+
+.counter {
+  height: 100%;
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.counter__title {
+  font-size: 6rem;
+}
+
+.counter__title--increment {
+  color: $increment;
+}
+
+.counter__title--decrement {
+  color: $decrement;
+}
+
+.buttons {
+  display: flex;
+}
+
+.button {
+  width: 180px;
+  height: 45px;
+  border: none;
+  border-radius: 6px;
+  background-color: $default;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  margin: 5px;
+}
+
+.button:hover {
+  background-color: $default-hover;
+}
+
+.button--increment {
+  background-color: $increment;
+  color: $white;
+  outline-color: $increment-outline;
+  cursor: pointer;
+}
+.button--increment:hover {
+  background-color: $increment-hover;
+}
+
+.button--decrement {
+  background-color: $decrement;
+  color: $white;
+  outline-color: $decrement-outline;
+  cursor: pointer;
+}
+
+.button--decrement:hover {
+  background-color: $decrement-hover;
+}
